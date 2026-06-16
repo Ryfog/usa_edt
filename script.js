@@ -34,28 +34,28 @@ const DEFAULT = {
   // construit selon les dispos profs ; jamais 2x la meme matiere sur un creneau ; variete chaque jour
   days: [
     { day: "Mercredi", grid: {
-      c1: { ALPHA: "info",    OMEGA: "eco",     SIGMA: "histoire", DELTA: "science" },
-      c2: { ALPHA: "science", OMEGA: "info",    SIGMA: "art",      DELTA: "sport" },
-      c3: { ALPHA: "art",     OMEGA: "theatre", SIGMA: "sport",    DELTA: "eco" },
-      c4: { ALPHA: "socio",   OMEGA: "sport",   SIGMA: "science",  DELTA: "theatre" }
+      c1: { ALPHA: "theatre", OMEGA: "eco", SIGMA: "socio", DELTA: "art" },
+      c2: { ALPHA: "sport", OMEGA: "histoire", SIGMA: "eco", DELTA: "socio" },
+      c3: { ALPHA: "art", OMEGA: "info", SIGMA: "theatre", DELTA: "eco" },
+      c4: { ALPHA: "eco", OMEGA: "theatre", SIGMA: "sport", DELTA: "science" }
     }},
     { day: "Jeudi", grid: {
-      c1: { ALPHA: "science", OMEGA: "histoire", SIGMA: "theatre", DELTA: "socio" },
-      c2: { ALPHA: "histoire", OMEGA: "theatre", SIGMA: "socio",   DELTA: "science" },
-      c3: { ALPHA: "theatre", OMEGA: "socio",    SIGMA: "science", DELTA: "histoire" },
-      c4: { ALPHA: "socio",   OMEGA: "science",  SIGMA: "histoire", DELTA: "theatre" }
+      c1: { ALPHA: "science", OMEGA: "theatre", SIGMA: "socio", DELTA: "histoire" },
+      c2: { ALPHA: "histoire", OMEGA: "socio", SIGMA: "theatre", DELTA: "science" },
+      c3: { ALPHA: "theatre", OMEGA: "histoire", SIGMA: "science", DELTA: "socio" },
+      c4: { ALPHA: "socio", OMEGA: "science", SIGMA: "histoire", DELTA: "theatre" }
     }},
     { day: "Samedi", grid: {
-      c1: { ALPHA: "histoire", OMEGA: "sport",   SIGMA: "science", DELTA: "art" },
-      c2: { ALPHA: "sport",   OMEGA: "science",  SIGMA: "theatre", DELTA: "info" },
-      c3: { ALPHA: "science", OMEGA: "art",      SIGMA: "info",    DELTA: "socio" },
-      c4: { ALPHA: "theatre", OMEGA: "histoire", SIGMA: "sport",   DELTA: "science" }
+      c1: { ALPHA: "info", OMEGA: "sport", SIGMA: "art", DELTA: "histoire" },
+      c2: { ALPHA: "socio", OMEGA: "art", SIGMA: "info", DELTA: "theatre" },
+      c3: { ALPHA: "science", OMEGA: "socio", SIGMA: "histoire", DELTA: "sport" },
+      c4: { ALPHA: "histoire", OMEGA: "theatre", SIGMA: "science", DELTA: "art" }
     }},
     { day: "Dimanche", grid: {
-      c1: { ALPHA: "sport",   OMEGA: "science",  SIGMA: "info",    DELTA: "socio" },
-      c2: { ALPHA: "info",    OMEGA: "socio",    SIGMA: "sport",   DELTA: "science" },
-      c3: { ALPHA: "socio",   OMEGA: "sport",    SIGMA: "science", DELTA: "info" },
-      c4: { ALPHA: "science", OMEGA: "info",     SIGMA: "socio",   DELTA: "sport" }
+      c1: { ALPHA: "socio", OMEGA: "science", SIGMA: "info", DELTA: "sport" },
+      c2: { ALPHA: "info", OMEGA: "socio", SIGMA: "sport", DELTA: "science" },
+      c3: { ALPHA: "sport", OMEGA: "info", SIGMA: "science", DELTA: "socio" },
+      c4: { ALPHA: "science", OMEGA: "sport", SIGMA: "socio", DELTA: "info" }
     }}
   ]
 };
