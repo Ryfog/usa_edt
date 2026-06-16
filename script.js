@@ -60,7 +60,7 @@ const DEFAULT = {
   ]
 };
 
-const KEY = 'usa_edt_v3';
+const KEY = 'usa_edt_v4';
 const $ = (s) => document.querySelector(s);
 let data, editMode = false;
 
