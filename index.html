@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USA · Emploi du temps</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- ENTÊTE -->
+    <header id="head">
+      <div class="crest">🎓</div>
+      <div class="titles">
+        <h1 id="title">UNIVERSITY OF SAN ANDREAS</h1>
+        <h2 id="subtitle">EMPLOI DU TEMPS – SEMESTRE D'ÉTÉ</h2>
+      </div>
+      <div class="head-right" id="badge">USA</div>
+    </header>
+
+    <!-- BARRE D'OUTILS -->
+    <div id="toolbar">
+      <button id="btnEdit" class="tb prim">✎ Modifier</button>
+      <span class="edit-only">
+        <button id="btnAddDay" class="tb">＋ Jour</button>
+        <button id="btnSubjects" class="tb">🎨 Matières</button>
+        <button id="btnTexts" class="tb">📝 Textes</button>
+        <button id="btnExport" class="tb">⬇ Exporter</button>
+        <button id="btnImport" class="tb">⬆ Importer</button>
+        <button id="btnReset" class="tb danger">⟲ Réinitialiser</button>
+        <input id="fileImport" type="file" accept="application/json" hidden>
+      </span>
+    </div>
+
+    <!-- EMPLOI DU TEMPS -->
+    <main id="board"></main>
+
+    <!-- PIED -->
+    <footer id="foot">
+      <div id="footMain">🎓 ORGANISE TON AVENIR. VIS TA PASSION. DEVIENS LÉGENDAIRE.</div>
+      <div id="footBadges">EXCELLENCE • INTÉGRITÉ • COMMUNAUTÉ</div>
+    </footer>
+  </div>
+
+  <!-- MODALE MATIÈRES -->
+  <div class="modal" id="subjectsModal">
+    <div class="modal-box">
+      <div class="modal-head"><h3>Matières & couleurs</h3><button class="x" data-close>✕</button></div>
+      <div id="subjectsList"></div>
+      <button id="addSubject" class="tb prim">＋ Ajouter une matière</button>
+    </div>
+  </div>
+
+  <!-- MODALE TEXTES -->
+  <div class="modal" id="textsModal">
+    <div class="modal-box">
+      <div class="modal-head"><h3>Textes</h3><button class="x" data-close>✕</button></div>
+      <label class="f">Titre<input id="tTitle"></label>
+      <label class="f">Sous-titre<input id="tSubtitle"></label>
+      <label class="f">Badge (haut-droite)<input id="tBadge"></label>
+      <label class="f">Pied — phrase<input id="tFoot"></label>
+      <label class="f">Pied — valeurs<input id="tBadges"></label>
+      <button id="saveTexts" class="tb prim">Enregistrer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
