@@ -23,6 +23,7 @@
       <button id="btnEdit" class="tb prim">✎ Modifier</button>
       <span class="edit-only">
         <button id="btnAddDay" class="tb">＋ Jour</button>
+        <button id="btnSlots" class="tb">🕐 Horaires</button>
         <button id="btnSubjects" class="tb">🎨 Matières</button>
         <button id="btnTexts" class="tb">📝 Textes</button>
         <button id="btnExport" class="tb">⬇ Exporter</button>
@@ -48,6 +49,19 @@
       <div class="modal-head"><h3>Matières & couleurs</h3><button class="x" data-close>✕</button></div>
       <div id="subjectsList"></div>
       <button id="addSubject" class="tb prim">＋ Ajouter une matière</button>
+    </div>
+  </div>
+
+  <!-- MODALE HORAIRES -->
+  <div class="modal" id="slotsModal">
+    <div class="modal-box">
+      <div class="modal-head"><h3>🕐 Horaires — créneaux & pauses (pour tous les jours)</h3><button class="x" data-close>✕</button></div>
+      <p class="hint">Réglés une seule fois ici : tous les jours utilisent ces mêmes horaires.</p>
+      <div id="slotsList"></div>
+      <div style="display:flex;gap:8px;margin-top:6px">
+        <button id="addSlot" class="tb prim">＋ Créneau de cours</button>
+        <button id="addBreak" class="tb">＋ Pause</button>
+      </div>
     </div>
   </div>
 

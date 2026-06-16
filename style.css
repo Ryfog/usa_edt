@@ -123,3 +123,16 @@ td.timeed input { text-align: center; }
 .subj-row .si-ico { width: 46px; text-align: center; font-size: 16px; }
 .subj-row input[type=color] { width: 40px; height: 34px; border: 1px solid var(--line); border-radius: 6px; background: #0a1730; cursor: pointer; }
 .subj-row .swatch { width: 26px; height: 26px; border-radius: 6px; flex: none; }
+
+.hint { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
+.slot-row { display: flex; align-items: center; gap: 8px; background: #0c1932; border: 1px solid var(--line); border-radius: 8px; padding: 8px; margin-bottom: 8px; }
+.slot-row input[type=text] { background: #0a1730; border: 1px solid var(--line); color: var(--txt); border-radius: 6px; padding: 7px 8px; font: inherit; font-size: 13px; }
+.slot-row .sl-time { width: 140px; text-align: center; font-variant-numeric: tabular-nums; }
+.slot-row .sl-tag { font-size: 11px; font-weight: 700; letter-spacing: 1px; padding: 3px 8px; border-radius: 5px; white-space: nowrap; }
+.slot-row .sl-tag.class { background: #1d3b6b; color: #bcd3ff; }
+.slot-row .sl-tag.break { background: #4a3b6b; color: #d9c2ff; }
+.slot-row .sl-extra { flex: 1; display: flex; gap: 6px; align-items: center; }
+.slot-row .sl-label { flex: 1; min-width: 90px; font-weight: 700; }
+.slot-row .sl-dur { width: 80px; }
+.slot-row input[type=color] { width: 40px; height: 32px; border: 1px solid var(--line); border-radius: 6px; background: #0a1730; cursor: pointer; }
+.slot-row .sl-ico { width: 44px; text-align: center; font-size: 15px; }
