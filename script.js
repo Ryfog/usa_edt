@@ -281,6 +281,7 @@ function toggleEdit() {
 }
 function init() {
   load(); render();
+  if (location.search.includes('clean')) document.body.classList.add('clean'); // vue propre (capture)
   $('#btnEdit').addEventListener('click', toggleEdit);
   $('#btnAddDay').addEventListener('click', () => { data.days.push({ day: "Lundi", grid: {} }); save(); render(); });
   $('#btnSlots').addEventListener('click', () => { renderSlots(); $('#slotsModal').classList.add('on'); });

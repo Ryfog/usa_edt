@@ -37,6 +37,7 @@ html, body {
 .tb:hover { filter: brightness(1.25); }
 .tb.prim { background: linear-gradient(180deg, #2f6fd0, #1f4e9c); border-color: #3f7fd0; }
 .tb.danger { background: #4a1d1d; border-color: #7a2e2e; }
+body.clean #toolbar { display: none; }
 .edit-only { display: none; gap: 8px; flex-wrap: wrap; }
 body.editing .edit-only { display: inline-flex; }
 body.editing #btnEdit { background: linear-gradient(180deg, #2e8b57, #1f6b43); border-color: #36a96b; }
